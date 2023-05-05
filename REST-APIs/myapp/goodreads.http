@@ -2,7 +2,11 @@ GET http://localhost:3000/books/
 
 ###
 
-GET http://localhost:3000/books/43/
+GET http://localhost:3000/books/?offset=2&limit=3&order_by=price&order=DESC
+
+###
+
+GET http://localhost:3000/books/1/
 
 ###
 
@@ -50,8 +54,3 @@ DELETE http://localhost:3000/books/41/
 
 GET http://localhost:3000/authors/1/books/
 
-###
-GET http://localhost:3000/authors/1/books/43/
-
-### 
-GET http://localhost:3000/authors/1/books/1/
